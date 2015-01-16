@@ -1,0 +1,31 @@
+<div class='row'>
+  <div class='col-md-12'>
+    <table class='table table-bordered table-striped'>
+      <thead>
+        <tr>
+          <th>FistName</th>
+          <th>LastName</th>
+          <th>Company</th>
+          <th>Website</th>
+          <th>JobTitle</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @leads.each do |lead| %>
+          <tr>
+            <td><%= lead.first_name %></td>
+            <td><%= lead.last_name %></td>
+            <td><%= lead.company %></td>
+            <td><%= lead.website %></td>
+            <td><%= lead.job_title %></td>
+            <td><%= lead.email %></td>
+            <td><%= lead.phone %></td>
+          </tr>
+        <% end %>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

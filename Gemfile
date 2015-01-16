@@ -45,11 +45,4 @@ group :development, :test do
   gem 'spring'
 end
 
-group :test do
-  gem 'rspec-rails', '~> 3.0.0'
-  gem 'rspec-mocks'
-  gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
-end
-
-gem 'sf_integrator'
+gem 'sf_integrator', '1.0.1'
