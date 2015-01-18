@@ -9,7 +9,7 @@ class LeadsController < ApplicationController
 
   def create
     lead = Lead.new(lead_params)
-    if lead.create
+    if lead.valid? && lead.create
       redirect_to leads_path
     else
       render :new
