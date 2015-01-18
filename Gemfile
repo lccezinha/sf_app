@@ -46,3 +46,8 @@ group :development, :test do
 end
 
 gem 'sf_integrator', '1.0.1'
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
